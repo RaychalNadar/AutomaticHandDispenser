@@ -31,15 +31,15 @@ void loop()
   delay(10);
   if (distance <15 && distance >0)               // Condition For Absence Of Obstacle            
   {
-    for(pos=0;pos<=20;pos++)
+    for(pos=60;pos<=120;pos++)
     {
     Myservo.write(pos);
-    delay(15);
+    delay(10);
     }
-    for(pos=20;pos>=0;pos--)
+    for(pos=120;pos>=60;pos--)
     {
     Myservo.write(pos);
-    delay(15);                                                 
+    delay(10);                                                 
     }
     delay(5000);
   }
